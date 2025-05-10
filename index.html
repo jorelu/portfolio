@@ -6,6 +6,9 @@
     section{
         padding: 20px
     }
+    td{
+        padding:10px
+    }
     .home [class~=mainheader] {
         font-size: 15vw;
     }
@@ -38,6 +41,26 @@
         }
     }
 
+    h3 {
+        font-size: 2vh;
+    }
+
+    @media screen and (min-width: 1024px) {
+        h3 {
+            font-size: 3vh;
+        }
+    }
+
+
+    p {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        p {
+            font-size: 12px;
+        }
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +73,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Jorel Ulep</title>
 </head>
-<body>
+<body class="flex flex-col items-center justify-center">
     <section id="particles-js" class="home relative flex items-center justify-center" style="height:100vh">
         <div class="absolute">
             <div class="flex flex-col items-center justify-center">
@@ -59,7 +82,8 @@
             </div>
         </div>
     </section>
-    <section class="justify-center">
+
+    <section class="justify-center md:w-300">
         <div class="flex flex-col items-center justify-center" style="margin-top:100px; margin-bottom:50px">
             <h2 class="h2 text-white font-[800]" style="font-family:'Poppins'; letter-spacing:3.75pt;">Projects</h2>
         </div>
@@ -78,6 +102,58 @@
             </div>
         </div>
     </section>
+
+    <section class="justify-center md:w-300">
+        <div class="flex flex-col items-center justify-center" style="margin-top:100px; margin-bottom:50px">
+            <h2 class="h2 text-white font-[800]" style="font-family:'Poppins'; letter-spacing:3.75pt;">Professional Experience</h2>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="align-top md:w-100"><h3 class="text-white font-[800]">2022 - Present</h3></td>
+                        <td class="align-top">
+                            <h3 class="text-white font-[800]">Software Developer, FLNT</h3>
+                            <br>
+                            <p class="text-gray-300">I designed and implemented solutions to optimize workflows and processes for FLNT's AI platform, enhanced user experience by developing advanced tools and dashboards, and ensured high availability and reliability of IT infrastructure.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-top md:w-100"><h3 class="text-white font-[800]">2019 - Present</h3></td>
+                        <td class="align-top">
+                            <h3 class="text-white font-[800]">Software Developer, Freelance</h3>
+                            <br>
+                            <p class="text-gray-300">I collaborate with a team of software developers to design, develop web application and create digital solutions</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-top md:w-100"><h3 class="text-white font-[800]">2019 - 2022</h3></td>
+                        <td class="align-top">
+                            <h3 class="text-white font-[800]">Software Developer, LeaseInfo</h3>
+                            <br>
+                            <p class="text-gray-300">I supported and maintained an existing Leasing Management System, provided development support for its ongoing enhancements, and ensured reliable IT assistance for general office operations.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-top md:w-100"><h3 class="text-white font-[800]">2019</h3></td>
+                        <td class="align-top">
+                            <h3 class="text-white font-[800]">Management Information System, Manila Polo Club</h3>
+                            <br>
+                            <p class="text-gray-300">I provided technical support to both customers and employees, handled software installations and updates, maintained POS systems, configured Wi-Fi and Ethernet networks, and managed the Information System to ensure seamless operations.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="justify-center w-full" style="padding: 20px; background-color: #1a191d;">
+        <div class="flex flex-col items-center justify-center">
+            <p class="text-gray-300">Jorel Ulep <span style="color:#e31b6d">©2025</span></p>
+        </div>
+    </footer>
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
