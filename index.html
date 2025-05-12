@@ -58,8 +58,35 @@
 
     @media screen and (min-width: 1024px) {
         p {
-            font-size: 12px;
+            font-size: 16px;
         }
+    }
+
+    .input1{
+        background-color: #0D0D0D;
+        padding:10px 15px;
+        color: white;
+    }
+
+    .input1::placeholder{
+        color: darkgrey
+    }
+
+    .input1:focus {
+    outline: none;
+    }
+
+    .button1{
+        background-color: #0D0D0D;
+        padding:10px 15px;
+        color: white;
+        max-width: 100px;
+        float:right;
+    }
+
+    .button1:hover{
+        background-color: white;
+        color: grey;
     }
 </style>
 <!DOCTYPE html>
@@ -74,7 +101,7 @@
     <title>Jorel Ulep</title>
 </head>
 <body class="flex flex-col items-center justify-center">
-    <section id="particles-js" class="home relative flex items-center justify-center" style="height:100vh">
+    <section id="particles-js" class="home relative flex items-center justify-center" style="height:100vh;">
         <div class="absolute">
             <div class="flex flex-col items-center justify-center">
                 <h1 class="mainheader text-white font-[800]" style="font-family:'Poppins'; letter-spacing:3.75pt;">Jorel Ulep</h1>
@@ -85,7 +112,7 @@
 
     <section class="justify-center md:w-300">
         <div class="flex flex-col items-center justify-center" style="margin-top:100px; margin-bottom:50px">
-            <h2 class="h2 text-white font-[800]" style="font-family:'Poppins'; letter-spacing:3.75pt;">Projects</h2>
+            <h2 class="h2 text-white font-[800] text-center" style="font-family:'Poppins'; letter-spacing:3.75pt;">Projects</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
@@ -105,7 +132,7 @@
 
     <section class="justify-center md:w-300 " style="margin-bottom: 100px;">
         <div class="flex flex-col items-center justify-center" style="margin-top:100px; margin-bottom:50px">
-            <h2 class="h2 text-white font-[800]" style="font-family:'Poppins'; letter-spacing:3.75pt;">Professional Experience</h2>
+            <h2 class="h2 text-white font-[800] text-center" style="font-family:'Poppins'; letter-spacing:3.75pt;">Professional Experience</h2>
         </div>
         <div class="flex flex-col items-center justify-center">
             <table>
@@ -149,7 +176,17 @@
             </table>
         </div>
     </section>
-    <footer class="justify-center w-full" style="padding: 20px; background-color: #1a191d;">
+    <footer class="flex flex-col items-center justify-center w-full gap-20" style="padding: 20px; background-color: #1a191d;">
+        <div class="justify-center md:w-300  grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <h2 class="h2 text-white font-[800] text-center" style="font-family:'Poppins'; letter-spacing:3.75pt;">Contact Me</h2>
+                <p class="text-center"style="color:04C2C9">Have a question or want to work together?</p><br><br>
+                <iframe src="https://jorelulepemailform.carrd.co/" class="w-full h-110"></iframe>
+            </div>
+            <div>
+
+            </div>
+        </div>
         <div class="flex flex-col items-center justify-center">
             <p class="text-gray-300">Jorel Ulep <span style="color:#e31b6d">©2025</span></p>
         </div>
@@ -158,3 +195,12 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<!---script>
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+    document.addEventListener("keydown", (event) => {
+    if (event.key === "F12" || (event.ctrlKey && event.shiftKey && ["I", "J"].includes(event.key))) {
+      event.preventDefault();
+    }
+  });
+</script--->
