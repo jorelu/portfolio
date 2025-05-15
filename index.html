@@ -1,4 +1,7 @@
 <style>
+    html {
+    scroll-behavior: smooth;
+    }
     body{
         font-family: 'Roboto Mono';
         background: linear-gradient(#0a192f 20%, #0D0D0D  50%);
@@ -88,6 +91,17 @@
         background-color: white;
         color: grey;
     }
+
+    .bottom-center {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -101,6 +115,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     
     <title>Jorel Ulep</title>
 </head>
@@ -112,9 +127,19 @@
                 <h1 class="subheader text-white font-[500] animate__animated animate__fadeInUp">Software Developer</h1>
             </div>
         </div>
+        <div class="bottom-center flex flex-col items-center justify-center">
+        <dotlottie-player
+        src="https://lottie.host/fdc5f66f-e52d-407c-9441-08fa5556b6d2/GJTorQvZIJ.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 100px; height: 100px"
+        onclick="location.href='#projects'"
+        loop
+        autoplay
+        ></dotlottie-player>
     </section>
 
-    <section class="justify-center md:w-300">
+    <section id="projects" class="justify-center md:w-300">
         <div class="flex flex-col items-center justify-center" style="margin-top:100px; margin-bottom:50px">
             <h2 class="h2 text-white font-[800] text-center" style="font-family:'Poppins'; letter-spacing:3.75pt;">Projects</h2>
         </div>
